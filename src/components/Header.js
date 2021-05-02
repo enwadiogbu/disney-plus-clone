@@ -47,6 +47,7 @@ const Nav = styled.nav`
     display: flex;
     align-item: center;
     padding: 0 36px;
+    overflow-x: hidden;
 `
 
 const Logo = styled.img`
@@ -92,20 +93,20 @@ const NavMenu = styled.div`
         }
 
         &:hover {
-            span: after {
+            span:after {
                 transform: scaleX(1);
                 opacity: 1;
             }
         }
     }
-
 `
-
 const UserImg = styled.img`
     width: 48px;
     height: 48px;
     border-radius: 50%;
     cursor: pointer;
 `
+
+
 
 
