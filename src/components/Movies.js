@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 
 function Movies() {
     const movies = useSelector(selectMovies);
+    console.log(movies);
 
     return (
         <Container>
@@ -13,13 +14,12 @@ function Movies() {
             <Content>
                 { movies &&
                     movies.map((movie) => (
-
-                    <Wrap key={movie.id}>
-                        <Link to={`/detail/${movie.id}`}>
-                        <img src={movie.cardImg} />
+                        <Wrap key={movie.id}>
+                        {/* <Link to={`/detail/${movie.id}`}> */}
+                            <img src={movie.cardImg} />
                         
-                        </Link>
-                    </Wrap>
+                        {/* </Link> */}
+                        </Wrap>
 
                     ))
                 }
