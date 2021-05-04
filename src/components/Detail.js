@@ -21,7 +21,7 @@ function Detail() {
                 //redirect to home page
             }
         })
-    }, [])
+    }, [id])
 
     console.log("Movie is", movie);
 
@@ -30,41 +30,41 @@ function Detail() {
             
             {movie && (
                 <>
-                <Background>
-                    <img src={movie.backgroundImg} />
-                </Background>
-                <ImageTitle>
-                    <img src={movie.titleImg} />
-                </ImageTitle>
-                <Controls>
-                    <PlayButton>
-                        <img src='/images/play-icon-black.png' />
-                            <span>PLAY</span>
-    
-                    </PlayButton>
-                    <TrailerButton>
-                    <img src='/images/play-icon-white.png' />
-                            <span>Trailer</span>
-    
-                    </TrailerButton>
-                    <AddButton>
-                        <span>+</span>
-                    </AddButton>
-                    <GroupWatchButton>
-                        <img src="/images/group-icon.png" />
-                    </GroupWatchButton>
-                </Controls>
-                <SubTitle>
-                    {movie.SubTitle}
-                </SubTitle>
-                <Description>
-                    {movie.description}
-                </Description>
-            </>
+                    <Background>
+                        <img src={movie.backgroundImg} />
+                    </Background>
+                    <ImageTitle>
+                        <img src={movie.titleImg} />
+                    </ImageTitle>
+                    <Controls>
+                        <PlayButton>
+                            <img src='/images/play-icon-black.png' />
+                                <span>PLAY</span>
+        
+                        </PlayButton>
+                        <TrailerButton>
+                        <img src='/images/play-icon-white.png' />
+                                <span>Trailer</span>
+        
+                        </TrailerButton>
+                        <AddButton>
+                            <span>+</span>
+                        </AddButton>
+                        <GroupWatchButton>
+                            <img src="/images/group-icon.png" />
+                        </GroupWatchButton>
+                    </Controls>
+                    <SubTitle>
+                        {movie.SubTitle}
+                    </SubTitle>
+                    <Description>
+                        {movie.description}
+                    </Description>
+                </>
 
-) 
+                ) 
 
-}
+            }
 </Container>
     );
 }
